@@ -1,0 +1,76 @@
+{
+  "editor.fontFamily": "Victor Mono ExtraBold, 'Courier New', monospace",
+  "terminal.integrated.gpuAcceleration": "off",
+  "editor.fontLigatures": true,
+  "vscode_vibrancy.opacity": 0,
+  "vscode_vibrancy.theme": "Dark (Only Subbar)",
+  "editor.inlineSuggest.enabled": true,
+  // "editor.letterSpacing": 0.4,
+  // "editor.lineHeight": 2,
+  "editor.letterSpacing": 0,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "editor.tabSize": 2,
+  "github.copilot.enable": {
+    "*": true,
+    "yaml": false,
+    "plaintext": false,
+    "markdown": false,
+    "typescriptreact": false
+  },
+  "workbench.activityBar.iconClickBehavior": "focus",
+  "workbench.useExperimentalGridlayout": true,
+
+  "tabnine.experimentalAutoImports": true,
+  "svelte.enable-ts-plugin": true,
+  "[svelte]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.iconTheme": "material-icon-theme",
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "window.zoomLevel": 2,
+  "workbench.colorCustomizations": {},
+  "workbench.colorTheme": "Orion",
+  "nebulaOni.update.restoreConfiguration": {
+    "themeSettings": {
+      "background": "Grey",
+      "main": "Bumblebee",
+      "highlight": "Ultra Violet",
+      "focusBorder": "ON",
+      "fontStyle": "Italic",
+      "comments": "Dark Violet",
+      "favorite": "OFF"
+    },
+    "favoriteSettings": {
+      "background": "Glacial Blue",
+      "main": "Sakura",
+      "highlight": "Ultra Violet",
+      "focusBorder": "ON",
+      "fontStyle": "Italic",
+      "comments": "Dark Magenta",
+      "favorite": "Nebula Oni (Pegasus)"
+    }
+  },
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer"
+  },
+  "glassit.alpha": 255,
+  "extensions.autoCheckUpdates": false,
+  "update.enableWindowsBackgroundUpdates": false,
+"errorLens.enabled": false,
+"customizeUI.activityBar": "bottom",
+"customizeUI.statusBarPosition": "under-panel"
+}
