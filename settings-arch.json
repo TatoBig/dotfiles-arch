@@ -1,0 +1,13 @@
+{
+    "workbench.colorTheme": "Dusk Bold",
+    "workbench.iconTheme": "Dusk",
+    "window.menuBarVisibility": "toggle",
+    "window.titleBarStyle": "custom",
+    "editor.fontFamily": "VictorMono NF, 'Courier New', monospace",
+    "editor.fontVariations": true,
+    "editor.fontWeight": "bold",
+    "window.zoomLevel": 2,
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+}
