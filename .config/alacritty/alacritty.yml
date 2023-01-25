@@ -1,7 +1,14 @@
 window:
   opacity: 0.90
+  dimensions:
+     columns: 57
+     lines: 12
 
-font:
+font: 
   normal:
-    family: JetBrainsMono NF
-    style: Regular
+    family: VictorMono NF
+    style: Bold
+  size: 15
+
+key_bindings:
+    - { key: N,  mods: Shift, action: SpawnNewInstance }

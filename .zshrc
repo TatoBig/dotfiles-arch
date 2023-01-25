@@ -8,10 +8,10 @@ export ZSH="$HOME/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="agnoster"
+ZSH_THEME="robbyrussell"
 
 # Set list of themes to pick from when loading at random
-# Setting this variable when ZSH_THEME="spaceship"
+# Setting this variable when ZSH_THEME=random will cause zsh to load
 # a theme from this variable instead of looking in $ZSH/themes/
 # If set to an empty array, this variable will have no effect.
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
@@ -70,7 +70,10 @@ ZSH_THEME="agnoster"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=( 
+    zsh-autosuggestions
+    git
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -99,18 +102,28 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+HISTFILE=~/.histfile
+HISTSIZE=1000
+SAVEHIST=1000
+# End of lines configured by zsh-newuser-install
+# The following lines were added by compinstall
+zstyle :compinstall filename '/home/tato/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall
+eval "$(starship init zsh)"
+echo " "
+pfetch
+
 alias vim="nvim"
+alias alac="nvim ~/.config/alacritty/alacritty.yml"
 alias zshconfig="nvim ~/.zshrc"
 alias ls="exa --icons"
 alias lsa="exa --icons -a"
 alias ll="exa --icons -l"
 alias lla="exa --icons -l -a"
 alias lst="exa --icons --tree --ignore-glob="node_modules" -a"
-alias bright="sudo vim /sys/class/backlight/radeon_bl0/brightness"
-picom -f &
-export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
-source "/home/tato/.oh-my-zsh/custom/themes/spaceship.zsh-theme"
-eval "$(starship init zsh)"
-
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
